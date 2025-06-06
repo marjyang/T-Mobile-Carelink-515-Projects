@@ -1,6 +1,26 @@
 # KneeHeal - ACL Rehabilitation Application
 
+**🔗 For the complete KneeHeal project files, visit the [`kneeheal-project` branch](https://github.com/marjyang/T-Mobile-Carelink-515-Projects/tree/kneeheal-project)**
+
 KneeHeal is an innovative IoT-enabled ACL rehabilitation system developed as part of the T-Mobile Carelink Projects by GIX Cohort 8. This project uses MPU sensors and machine learning to track knee flexion angles during rehabilitation exercises, providing real-time feedback to patients and healthcare providers.
+
+## 🚀 Quick Start
+
+To get started with the KneeHeal project:
+
+```bash
+# Clone the repository and switch to the KneeHeal branch
+git clone https://github.com/marjyang/T-Mobile-Carelink-515-Projects.git
+cd T-Mobile-Carelink-515-Projects
+git checkout kneeheal-project
+
+# Install dependencies
+npm install
+pip install -r requirements.txt
+
+# Start the application
+npm start
+```
 
 ## Project Overview
 
@@ -30,6 +50,26 @@ This system combines hardware sensors with a React-based web application and Fir
 - **Styling**: CSS with responsive design
 - **Charts**: Recharts for data visualization
 
+## 📁 Project Structure
+
+**Important:** All KneeHeal project files are located in the [`kneeheal-project` branch](https://github.com/marjyang/T-Mobile-Carelink-515-Projects/tree/kneeheal-project).
+
+```
+KneeHeal/ (on kneeheal-project branch)
+├── src/
+│   ├── ACLRehabilitationApp.js    # Main patient dashboard
+│   ├── DoctorPage.jsx             # Healthcare provider interface
+│   ├── SignInPage.jsx             # Authentication and user management
+│   ├── firebase.js                # Firebase configuration
+│   └── ...
+├── firebase_read_predict.py       # ML prediction service
+├── mpu_angle_model.pkl           # Trained ML model
+├── requirements.txt              # Python dependencies
+├── package.json                  # Node.js dependencies
+├── SETUP.md                      # Detailed setup instructions
+└── README.md                     # This file
+```
+
 ## Getting Started
 
 ### Prerequisites
@@ -41,10 +81,11 @@ This system combines hardware sensors with a React-based web application and Fir
 
 ### Installation
 
-1. **Clone the repository**
+1. **Clone the repository and switch to KneeHeal branch**
    ```bash
    git clone https://github.com/marjyang/T-Mobile-Carelink-515-Projects.git
-   cd T-Mobile-Carelink-515-Projects/KneeHeal
+   cd T-Mobile-Carelink-515-Projects
+   git checkout kneeheal-project
    ```
 
 2. **Install dependencies**
@@ -68,6 +109,8 @@ This system combines hardware sensors with a React-based web application and Fir
    python firebase_read_predict.py
    ```
 
+For detailed setup instructions, see [`SETUP.md`](https://github.com/marjyang/T-Mobile-Carelink-515-Projects/blob/kneeheal-project/SETUP.md) in the kneeheal-project branch.
+
 ### Hardware Setup
 
 1. Connect dual MPU6050 sensors to your microcontroller
@@ -79,22 +122,6 @@ This system combines hardware sensors with a React-based web application and Fir
 1. **Patient Interface**: Access the main dashboard to view real-time knee angle data and exercise progress
 2. **Doctor Interface**: Monitor multiple patients and review rehabilitation progress
 3. **Data Collection**: The system automatically collects sensor data and provides ML-based angle predictions
-
-## Project Structure
-
-```
-KneeHeal/
-├── src/
-│   ├── ACLRehabilitationApp.js    # Main patient dashboard
-│   ├── DoctorPage.jsx             # Healthcare provider interface
-│   ├── SignInPage.jsx             # Authentication and user management
-│   ├── firebase.js                # Firebase configuration
-│   └── ...
-├── firebase_read_predict.py       # ML prediction service
-├── mpu_angle_model.pkl           # Trained ML model
-├── requirements.txt              # Python dependencies
-└── package.json                  # Node.js dependencies
-```
 
 ## Machine Learning Model
 
@@ -130,6 +157,12 @@ This project is part of the larger T-Mobile Carelink initiative, which includes:
 3. **X** - Additional healthcare monitoring solution
 
 For more information about the complete Carelink project collection, visit: [T-Mobile Carelink Projects Repository](https://github.com/marjyang/T-Mobile-Carelink-515-Projects)
+
+## Branch Structure
+
+- **`main`** - Main repository with overview and links to individual projects
+- **`kneeheal-project`** - Complete KneeHeal application with all source files
+- Additional branches for other Carelink projects
 
 ## License
 
