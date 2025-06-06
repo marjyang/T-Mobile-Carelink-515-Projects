@@ -9,6 +9,9 @@ All three projects are integrated into the following deployed website, https://a
 
 To demo each project with integrated hardware and software, please navigate to each project's folder. There, you will be able to find detailed instructions on how to get set up.
 
+<br>
+___
+
 #### Contributors
 - **KneeHeal:** Kelly Peng, Diana Ding, Yourong Xu, Jialu Huang
 - **X:** Auria Zhang, Jazmyn Zhang, Yunqing Zhao, Shangming Zhuo
