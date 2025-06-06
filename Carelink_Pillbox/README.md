@@ -28,22 +28,18 @@ We integrated on and finalized the UI design for both patient and doctor dashboa
 You can find this code in the `portal` directory.
 
 #### Key features include:
-##### Daily Pill Intake Tracking:
-- Displays pill status by time and compartment using a simple, color-coded calendar view.
-##### Weekly Adherence Summaries:
-- Visualizes weekly medication patterns using backend-generated data and intuitive charts.
-##### Blood Pressure Summary:
-- Provides a quick overview of the patient’s recent blood pressure readings for contextual health insights.
-##### Medication Adherence Reminders:
-- Automatically sends reminders to patients based on missed doses or irregular intake patterns.
-##### Doctor-to-Patient Messaging:
-- Allows doctors to send personalized notes or feedback directly to patients, which can be reviewed in their individual portal.
+1. **Daily Pill Intake Tracking:** Displays pill status by time and compartment using a simple, color-coded calendar view.
+2. **Weekly Adherence Summaries:** Visualizes weekly medication patterns using backend-generated data and intuitive charts.
+3. **Blood Pressure Summary:** Provides a quick overview of the patient’s recent blood pressure readings for contextual health insights.
+4. **Medication Adherence Reminders:** Automatically sends reminders to patients based on missed doses or irregular intake patterns.
+5. **Doctor-to-Patient Messaging:** Allows doctors to send personalized notes or feedback directly to patients, which can be reviewed in their individual portal.
 
 ## Setup Instructions
 ### Prerequisites
 - VSCode with PlatformIO extension or PlatformIO IDE
 - Carelink Pill Box
 - USB-C cable to connect to pill box ESP32S3s
+- *Before uploading code to ESP32S3s, ensure the switch is OFF.*
 
 ### A) Upload Steps - LDR ESP32-S3
 1. Create a new project in PlatformIO, selecting "Seeed Studio XIAO ESP32S3" as your board and "Arduino" as the framework
