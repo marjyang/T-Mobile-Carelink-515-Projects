@@ -5,22 +5,18 @@
 #include "camera_pins.h"
 #include <time.h> 
 
-
-// const char* serverUrl = "http://10.19.227.222:8000/upload";  // Flask server IP
-
-const char* ssid = "TMOBILE-C883";
-const char* password = "onion.bacteria.wreath.jury";
-const char* serverUrl = "http://192.168.12.150:8000/cam";  // Flask server IP
+const char* ssid = "TMOBILE-XXX"; // replace with wifi ssid
+const char* password = "XXXXXXXXXXXXX"; // replace with wifi password
+const char* serverUrl = "http://XXX.XXX.XX.XXX:8000/cam";  // flask server IP - replace, and KEEP ":8000/cam"
 
 // Button configuration
 #define BUTTON_PIN 2         // GPIO 2 for lid switch
 #define FRAMES_PER_CAPTURE 50  // Number of frames to capture
-#define CAPTURE_DELAY 3000   // 3-second delay before capturing
+#define CAPTURE_DELAY 3000   // 3 second delay before capturing
 unsigned long sessionTimestamp = 0;
 
-// SPDT switch configuration - change these to variables instead of #define
-bool usingNOTerminal = true;   // Set to true if using Normally Open terminal
-bool usingNCTerminal = false;  // Set to true if using Normally Closed terminal
+bool usingNOTerminal = true;  
+bool usingNCTerminal = false; 
 
 // Camera pin definitions (unchanged)
 #define PWDN_GPIO_NUM     -1
@@ -40,7 +36,7 @@ bool usingNCTerminal = false;  // Set to true if using Normally Closed terminal
 #define HREF_GPIO_NUM     47
 #define PCLK_GPIO_NUM     13
 
-// State variables for lid detection
+// variables for lid detection
 bool lidWasClosed = true;      // Assume lid starts closed
 unsigned long lidOpenTime = 0;
 bool captureScheduled = false;
@@ -84,7 +80,7 @@ void startCamera() {
   }
 }
 
-// Helper function to check if lid is closed based on SPDT wiring
+// helper function to check if lid is closed based on SPDT wiring
 bool isLidClosed() {
   int buttonState = digitalRead(BUTTON_PIN);
   
@@ -141,7 +137,7 @@ void captureFrames() {
     frame_count++;
   }
 
-  // 🔔 AFTER sending all frames, send the burst completion signal
+  // AFTER sending all frames, send the burst completion signal
   if (WiFi.status() == WL_CONNECTED) {
     HTTPClient http;
     String doneUrl = String(serverUrl) + "-done?ts=" + String(sessionTimestamp);
@@ -239,7 +235,7 @@ void loop() {
   else if (lidWasClosed) {
     lidWasClosed = false;
     lidOpenTime = millis();
-    sessionTimestamp = time(nullptr);  // 🕒 Store timestamp for syncing session
+    sessionTimestamp = time(nullptr);  // Store timestamp for syncing session
     Serial.printf("📂 Lid opened - will capture in 3 seconds | Session TS: %lu\n", sessionTimestamp);
     captureScheduled = true;
   }
