@@ -1,0 +1,987 @@
+/* Patient Dashboard Complete CSS */
+
+/* Reset and General Styles */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  background: #f5f5f5;
+}
+
+button {
+  font-family: inherit;
+}
+
+input {
+  font-family: inherit;
+}
+
+/* App Layout */
+.dashboard-container {
+  display: flex;
+  min-height: 100vh;
+  background: #f5f5f5;
+}
+
+/* Sidebar Styles */
+.sidebar {
+  width: 200px;
+  min-height: 100vh;
+  background: white;
+  border-right: 1px solid #e0e0e0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+/* Logo Section */
+.logo-section {
+  padding: 25px 20px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.tmobile-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+}
+
+.t-logo {
+  background-color: #e20074;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 6px 10px;
+  border-radius: 3px;
+  font-family: Arial, sans-serif;
+}
+
+.mobile-text {
+  color: #e20074;
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 3px;
+  font-family: Arial, sans-serif;
+}
+
+/* App Badge Section */
+.app-badge-section {
+  padding: 25px 20px;
+  text-align: center;
+}
+
+.app-badge {
+  background: #e20074;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: 600;
+  display: inline-block;
+  text-align: center;
+}
+
+/* Divider */
+.divider {
+  margin: 0 20px 25px 20px;
+  border: none;
+  border-top: 1px solid #e0e0e0;
+}
+
+/* Navigation Menu */
+.nav-menu {
+  flex: 1;
+  padding: 0 20px;
+}
+
+.nav-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-item {
+  margin-bottom: 12px;
+}
+
+.nav-button {
+  width: 100%;
+  text-align: center;
+  background: none;
+  border: none;
+  padding: 12px 16px;
+  font-size: 14px;
+  color: #333;
+  cursor: pointer;
+  border-radius: 25px;
+  transition: all 0.2s ease;
+  font-weight: 500;
+}
+
+.nav-button:hover {
+  background-color: #f0f0f0;
+}
+
+.nav-button.active {
+  background-color: #f0f0f0;
+  color: #333;
+  font-weight: 600;
+}
+
+/* User Info Section - Bottom */
+.user-info-section {
+  padding: 25px 20px;
+  text-align: center;
+  border-top: 1px solid #f0f0f0;
+}
+
+.user-info {
+  margin-bottom: 20px;
+}
+
+.user-name {
+  margin: 0 0 8px 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+}
+
+.user-email {
+  margin: 0;
+  font-size: 13px;
+  color: #666;
+}
+
+/* Bottom Actions */
+.bottom-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.settings-icon-btn,
+.menu-icon-btn {
+  background: none;
+  border: none;
+  color: #666;
+  cursor: pointer;
+  padding: 6px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.settings-icon-btn:hover,
+.menu-icon-btn:hover {
+  background: #f0f0f0;
+  color: #333;
+}
+
+.logout-btn {
+  background: none;
+  border: none;
+  color: #666;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.logout-btn:hover {
+  color: #e20074;
+}
+
+/* Main Content */
+.main-content {
+  flex: 1;
+  margin-left: 200px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header Styles */
+.header-container {
+  background: white;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 20px 30px;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  background: #f8f9fa;
+  border-radius: 25px;
+  padding: 8px 20px;
+  width: 300px;
+}
+
+.search-input {
+  border: none;
+  background: none;
+  outline: none;
+  flex: 1;
+  padding: 8px;
+  font-size: 14px;
+}
+
+.search-btn {
+  background: none;
+  border: none;
+  color: #666;
+  cursor: pointer;
+}
+
+.header-actions {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.add-btn,
+.notification-btn {
+  background: #e20074;
+  color: white;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.add-btn:hover,
+.notification-btn:hover {
+  background: #c5006a;
+  transform: translateY(-2px);
+}
+
+.notification-wrapper {
+  position: relative;
+}
+
+.notification-badge {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  background-color: #e20074; /* T-Mobile magenta */
+  color: white;
+  font-size: 10px;
+  font-weight: bold;
+  width: 20px;
+  height: 20px;
+  line-height: 16px;
+  text-align: center;
+  border-radius: 50%;
+  border: 2px solid white;
+  z-index: 1;
+}
+
+/* Dashboard Content */
+.dashboard-content {
+  padding: 30px;
+  flex: 1;
+}
+
+/* Medication Schedule */
+.medication-schedule {
+  background: white;
+  border-radius: 15px;
+  padding: 25px;
+  margin-bottom: 25px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.schedule-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 25px;
+}
+
+.header-left h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #333;
+  margin: 0 0 8px 0;
+}
+
+.current-date {
+  font-size: 14px;
+  font-weight: 600;
+  color: #666;
+}
+
+.status-message {
+  font-size: 13px;
+  color: #888;
+  margin-top: 3px;
+}
+
+.customize-btn {
+  background: #e20074;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 14px;
+}
+
+.customize-btn:hover {
+  background: #c5006a;
+  transform: translateY(-1px);
+}
+
+/* Horizontal Layout */
+.horizontal-layout {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+/* Column Titles */
+.column-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  margin: 0 0 15px 0;
+  text-align: center;
+}
+
+/* Progress Column */
+.progress-column {
+  flex: 0 0 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.circular-progress {
+  position: relative;
+  width: 180px;
+  height: 180px;
+}
+
+.progress-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.single-pill {
+  font-size: 32px;
+  opacity: 0.9;
+}
+
+/* Medication Column */
+.medication-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-width: 300px;
+}
+
+.medication-items {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.medication-row {
+  display: flex;
+  align-items: center;
+  padding: 12px 15px;
+  background: #f8f9fa;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  border: 1px solid #e9ecef;
+}
+
+.medication-row:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+}
+
+.med-name {
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 3px;
+  font-size: 14px;
+}
+
+.med-dosage {
+  color: #666;
+  font-size: 12px;
+}
+
+/* Calendar Column */
+.calendar-column {
+  flex: 0 0 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Weekly Calendar */
+.weekly-calendar {
+  width: 100%;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  max-width: 240px;
+}
+
+.calendar-day {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.day-label {
+  font-size: 10px;
+  font-weight: 600;
+  color: #666;
+  text-align: center;
+}
+
+.day-indicator {
+  width: 35px;
+  height: 35px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.day-indicator.completed {
+  background: #e20074;
+}
+
+.day-indicator.pending {
+  background: #f0f0f0;
+  border: 2px dashed #ddd;
+}
+
+.pending-circle {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 2px dashed #ccc;
+}
+.exclamation {
+  color: #e20074;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .horizontal-layout {
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+  }
+
+  .medication-column {
+    width: 100%;
+    max-width: 600px;
+  }
+
+  .progress-column,
+  .calendar-column {
+    width: auto;
+  }
+}
+
+/* Bottom Section */
+.bottom-section {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 30px;
+}
+
+/* Blood Pressure */
+.blood-pressure-container {
+  background: white;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.section-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #333;
+  margin: 0 0 20px 0;
+}
+
+.consistency-status {
+  margin-bottom: 20px;
+}
+
+.status-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.status-label {
+  font-weight: 600;
+  color: #333;
+}
+
+.trend-btn {
+  background: #e20074;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 16px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.status-description {
+  color: #666;
+  font-size: 14px;
+  margin: 0;
+}
+
+.chart-container {
+  position: relative;
+}
+
+.chart-legend {
+  display: flex;
+  gap: 20px;
+  margin-top: 15px;
+  justify-content: center;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  color: #666;
+}
+
+.legend-color {
+  width: 12px;
+  height: 12px;
+  border-radius: 2px;
+}
+
+.legend-color.systolic {
+  background: #ff6b6b;
+}
+
+.legend-color.diastolic {
+  background: #4ecdc4;
+}
+
+/* Right Panel */
+.right-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Suggestions Panel */
+.suggestions-panel {
+  background: white;
+  border-radius: 20px;
+  padding: 25px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.panel-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #333;
+  margin: 0 0 20px 0;
+}
+
+.suggestions-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.suggestion-item {
+  background: #f8f9fa;
+  border-radius: 12px;
+  padding: 15px;
+  border-left: none;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.suggestion-item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 6px;
+  background: #e20074;
+  border-radius: 0 3px 3px 0;
+}
+
+.suggestion-item:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+}
+
+.suggestion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.suggestion-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+  margin: 0;
+}
+
+.suggestion-date {
+  font-size: 12px;
+  color: #666;
+}
+
+.suggestion-content {
+  font-size: 13px;
+  color: #555;
+  line-height: 1.4;
+  margin: 0 0 10px 0;
+}
+
+.suggestion-footer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.suggestion-doctor {
+  font-size: 12px;
+  color: #e20074;
+  font-weight: 500;
+}
+
+/* Bottom Section Layout Adjustment */
+.bottom-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+/* Prescription Details */
+.prescription-details {
+  background: white;
+  border-radius: 20px;
+  padding: 25px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.details-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #333;
+  margin: 0 0 20px 0;
+}
+
+.details-actions {
+  display: flex;
+  gap: 15px;
+}
+
+.action-btn {
+  flex: 1;
+  padding: 12px 20px;
+  border-radius: 25px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.action-btn.amount-changes {
+  background: #e3f2fd;
+  color: #1976d2;
+}
+
+.action-btn.refill-notification {
+  background: #f3e5f5;
+  color: #7b1fa2;
+}
+
+.action-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .bottom-section {
+    grid-template-columns: 1fr;
+  }
+
+  .schedule-content {
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+  }
+
+  .medication-list-section {
+    width: 100%;
+    max-width: 600px;
+  }
+
+  .progress-section,
+  .calendar-section {
+    width: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .dashboard-container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+    border-right: none;
+    border-bottom: 1px solid #e0e0e0;
+  }
+
+  .main-content {
+    margin-left: 0;
+  }
+
+  .dashboard-content {
+    padding: 20px;
+  }
+
+  .schedule-header {
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+  }
+
+  .header-content {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .search-bar {
+    width: 100%;
+  }
+
+  .circular-progress {
+    width: 150px;
+    height: 150px;
+  }
+
+  .circular-progress svg {
+    width: 150px;
+    height: 150px;
+  }
+
+  .calendar-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .suggestions-container {
+    flex-direction: column;
+  }
+
+  .details-actions {
+    flex-direction: column;
+  }
+
+  .bottom-actions {
+    justify-content: space-between;
+  }
+
+  .schedule-content {
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+  }
+}
+
+.spinner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0;
+}
+
+.spinner {
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #e20074;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal {
+  background: #fff;
+  border: 4px solid #e20074; /* T-Mobile Magenta */
+  border-radius: 1rem;
+  padding: 2rem;
+  max-width: 400px;
+  width: 90%;
+  text-align: center;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.modal-title {
+  color: #e20074;
+  font-size: 1.75rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.modal-message {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.modal-button {
+  background-color: #e20074;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.modal-button:hover {
+  background-color: #c60066;
+}
+
+.notification-drawer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 100%;
+  background-color: white;
+  border-left: 3px solid #e20074;
+  box-shadow: -4px 0 12px rgba(0, 0, 0, 0.2);
+  z-index: 1001;
+  display: flex;
+  flex-direction: column;
+  animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.drawer-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  font-weight: bold;
+  color: #e20074;
+  border-bottom: 1px solid #eee;
+}
+
+.drawer-header button {
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.drawer-content {
+  padding: 16px;
+  flex: 1;
+  overflow-y: auto;
+}
+
+.notification-item {
+  background: #fef1f6;
+  border-left: 4px solid #e20074;
+  padding: 12px;
+  margin-bottom: 12px;
+  font-size: 14px;
+  border-radius: 6px;
+  color: #333;
+}
+
+.notification-item.empty {
+  color: #aaa;
+  font-style: italic;
+}
