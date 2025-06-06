@@ -1,6 +1,9 @@
 # Carelink Pill Box
 A remote monitoring solution that provides doctors with adherence data and empowers patients with greater visibility into their hypertension medication habits. 
 
+## User Flow
+![image](https://github.com/user-attachments/assets/2e47837d-cab3-49e7-9ff1-ba3d073bdde5)
+
 ## Full System Integration
 We deployed two complementary sensing modalities:
 - Photoresistors (LDRs) detect physical removal of pills from each compartment.
@@ -15,6 +18,9 @@ Data from both types of sensors are timestamped and sent to a cloud-based FastAP
 - The system (The camera and the photo resistors) is automatically activated when the pillbox is opened, triggered by an embedded switch mechanism placed inside the bottom left part of the pill box.
 - The device connects to the cloud through T-Mobile’s 5G network, which supports real-time data upload and remote monitoring without depending on local Wi-Fi.
 - Backend supports real-time Firebase integration, enabling potential EHR sync in the future.
+
+## Data Pipeline
+![image](https://github.com/user-attachments/assets/34722ea2-b128-43f9-bd06-f3546cbb7c8a)
 
 ## Frontend Visualization
 We integrated on and finalized the UI design for both patient and doctor dashboards and implemented responsive dashboards using React, HTML, CSS, and JavaScript within the Cursor development environment to visualize and receiving real-time data collection from the pillbox. We also integrated our portals with two other teams sponsored by the T-Mobile CareLink+ project, allowing both patients and doctors to sign in through one unified platform. 
