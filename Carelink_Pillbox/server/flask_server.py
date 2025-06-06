@@ -13,18 +13,18 @@ from firebase_admin import credentials, firestore
 # ------------------------------------ SETUP ------------------------------------
 
 app = Flask(__name__)
-cred = credentials.Certificate("medication-tracking-f24d7-firebase-adminsdk-fbsvc-a62de30b6e.json")
+cred = credentials.Certificate("XXXXXXXXXXXXXXXXXX.json") # replace with Firebase credentials file name
 firebase_admin.initialize_app(cred)
 db = firestore.client()
 
-USER_ID = "EJzmOQHujIhd6rTj38sSvCjluqN2"
+USER_ID = "EJzmOQHujIhd6rTj38sSvCjluqN2" # random user ID - reflects onto Firebase
 
 frame_buffer = []
 landmarks_buffer = []
 poses_detected = []
 processing_in_progress = False
 last_detection_time = 0
-latest_session_timestamp = None  # 🆕 Store the current session timestamp
+latest_session_timestamp = None  # Store the current session timestamp
 
 # Pose model
 mp_pose = mp.solutions.pose
@@ -48,12 +48,12 @@ def log_gesture(user_id, timestamp, gesture_count, person_in_frame, session_vali
         "session_valid": session_valid        
     }, merge=True)
 
-def log_ldr(user_id, timestamp, pills_present, pills_removed, removed_slots):
+def log_ldr(user_id, timestamp, pills_removed, removed_slots):
     session_id = get_session_id_from_time(timestamp)
     doc_ref = db.collection("users").document(user_id).collection("sessions").document(session_id)
     
     doc_ref.set({
-        "pills_present": pills_present,
+        # "pills_present": pills_present,
         "pills_removed": pills_removed,
         "removed_slots": removed_slots,
         "ldr_timestamp": timestamp
@@ -150,11 +150,10 @@ def camera_done():
             doc = doc_ref.get()
             if doc.exists:
                 data = doc.to_dict()
-                pills_present = data.get("pills_present", None)
                 pills_removed = data.get("pills_removed", None)
 
                 # Compute intake status
-                if pills_present is None or pills_removed is None:
+                if pills_removed is None:
                     intake_status = "Not enough data"
                     confidence = "Low"
 
@@ -162,13 +161,17 @@ def camera_done():
                     intake_status = "Taken"
                     confidence = "High"
 
-                elif session_valid and pills_removed == 0:
+                elif pills_removed == 0 and session_valid:
                     intake_status = "Uncertain"
                     confidence = "Medium"
 
-                else:
+                elif pills_removed == 0 and not session_valid:
                     intake_status = "Not Taken"
                     confidence = "High"
+
+                else:
+                    intake_status = "Unknown"
+                    confidence = "Low"
 
                 doc_ref.set({
                     "intake_status": intake_status,
@@ -196,7 +199,6 @@ def receive_ldr_data():
         print("📥 LDR Data Received:", data)
 
         timestamp = data.get("timestamp", int(time.time()))
-        pills_present = data.get("pills_present")
         pills_removed = data.get("pills_removed")
         
         # NEW: Get removed_slots (if sent as a string like "2,4")
@@ -207,7 +209,9 @@ def receive_ldr_data():
             removed_slots = removed_slots_raw  # fallback if it's already a list
 
         # NEW: Include removed_slots in your log or processing
-        log_ldr(USER_ID, timestamp, pills_present, pills_removed, removed_slots)
+        log_ldr(USER_ID, timestamp, pills_removed, removed_slots)
+        # log_ldr(USER_ID, timestamp, pills_present, pills_removed, removed_slots)
+
 
         return jsonify({
             "status": "success",
@@ -269,5 +273,4 @@ def timeout_watcher():
 
 if __name__ == "__main__":
     print("🚀 Starting Flask server...")
-    # threading.Thread(target=timeout_watcher, daemon=True).start()
     app.run(host="0.0.0.0", port=8000)
