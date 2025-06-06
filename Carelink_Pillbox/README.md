@@ -1,5 +1,5 @@
 # Carelink Pill Box
-A project to develop a system that allows doctors to remotely verify patient adherence to hypertension medication.
+A remote monitoring solution that provides doctors with adherence data and empowers patients with greater visibility into their hypertension medication habits. 
 
 ## Full System Integration
 We deployed two complementary sensing modalities:
@@ -17,7 +17,9 @@ Data from both types of sensors are timestamped and sent to a cloud-based FastAP
 - Backend supports real-time Firebase integration, enabling potential EHR sync in the future.
 
 ## Frontend Visualization
-We interated on and finalized the UI design for both patient and doctor dashboards and implemented responsive dashboards using React, HTML, CSS, and JavaScript within the Cursor development environment to visualize and receiving real-time data collection from the pillbox. We also integrated our portals with two other teams sponsored by the T-Mobile CareLink+ project, allowing both patients and doctors to sign in through one unified platform.
+We integrated on and finalized the UI design for both patient and doctor dashboards and implemented responsive dashboards using React, HTML, CSS, and JavaScript within the Cursor development environment to visualize and receiving real-time data collection from the pillbox. We also integrated our portals with two other teams sponsored by the T-Mobile CareLink+ project, allowing both patients and doctors to sign in through one unified platform. 
+
+You can find this code in the `portal` directory.
 
 #### Key features include:
 ##### Daily Pill Intake Tracking:
