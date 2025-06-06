@@ -1,10 +1,8 @@
 # T-Mobile Carelink Projects
-## Introduction
 This repository builds upon the original Carelink project developed by GIX Cohort 7. It contains new contributions from GIX Cohort 8, created as part of TECHIN 515 (Hardware Software Lab II), aimed to further expand T-Mobile’s remote healthcare data collection system.
 
 All three projects are integrated into the following deployed website: https://adorable-brigadeiros-c2240e.netlify.app/
 
-## Repo Projects
 1. Carelink Hypertension IoT Pill Box
 2. KneeHeal
 3. X
