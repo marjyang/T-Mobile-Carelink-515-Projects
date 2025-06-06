@@ -1,70 +1,140 @@
-# Getting Started with Create React App
+# KneeHeal - ACL Rehabilitation Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+KneeHeal is an innovative IoT-enabled ACL rehabilitation system developed as part of the T-Mobile Carelink Projects by GIX Cohort 8. This project uses MPU sensors and machine learning to track knee flexion angles during rehabilitation exercises, providing real-time feedback to patients and healthcare providers.
 
-## Available Scripts
+## Project Overview
 
-In the project directory, you can run:
+This system combines hardware sensors with a React-based web application and Firebase backend to create a comprehensive rehabilitation monitoring solution. The application provides:
 
-### `npm start`
+- Real-time knee flexion angle monitoring using dual MPU sensors
+- Machine learning-based angle prediction and analysis
+- Patient dashboard with exercise tracking and progress visualization
+- Doctor interface for monitoring patient progress
+- Firebase integration for real-time data synchronization
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Sensor Integration**: Dual MPU6050 sensors for comprehensive movement tracking
+- **Real-time Analytics**: Live monitoring of knee flexion angles during exercises
+- **Progress Tracking**: Historical data visualization and progress reports
+- **User Management**: Separate interfaces for patients and healthcare providers
+- **Cloud Sync**: Firebase real-time database integration
+- **ML Predictions**: Machine learning model for accurate angle prediction
 
-### `npm test`
+## Technology Stack
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Frontend**: React.js with modern UI components
+- **Backend**: Firebase Realtime Database
+- **Machine Learning**: Python with scikit-learn (joblib)
+- **Hardware**: MPU6050 sensors with Arduino/ESP32
+- **Styling**: CSS with responsive design
+- **Charts**: Recharts for data visualization
 
-### `npm run build`
+## Getting Started
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Prerequisites
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Node.js (v14 or higher)
+- Python 3.8+
+- Firebase account and project setup
+- Arduino IDE (for hardware setup)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Installation
 
-### `npm run eject`
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/marjyang/T-Mobile-Carelink-515-Projects.git
+   cd T-Mobile-Carelink-515-Projects/KneeHeal
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+2. **Install dependencies**
+   ```bash
+   npm install
+   pip install -r requirements.txt
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3. **Firebase Setup**
+   - Create a Firebase project
+   - Enable Realtime Database
+   - Download the service account key and save as `serviceAccountKey.json`
+   - Update Firebase configuration in `src/firebase.js`
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+4. **Start the applications**
+   ```bash
+   # Start React development server
+   npm start
+   
+   # In a separate terminal, start the ML prediction service
+   python firebase_read_predict.py
+   ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Hardware Setup
 
-## Learn More
+1. Connect dual MPU6050 sensors to your microcontroller
+2. Upload the sensor reading code to collect accelerometer and gyroscope data
+3. Configure the sensors to send data to Firebase in the expected format
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Usage
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. **Patient Interface**: Access the main dashboard to view real-time knee angle data and exercise progress
+2. **Doctor Interface**: Monitor multiple patients and review rehabilitation progress
+3. **Data Collection**: The system automatically collects sensor data and provides ML-based angle predictions
 
-### Code Splitting
+## Project Structure
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```
+KneeHeal/
+├── src/
+│   ├── ACLRehabilitationApp.js    # Main patient dashboard
+│   ├── DoctorPage.jsx             # Healthcare provider interface
+│   ├── SignInPage.jsx             # Authentication and user management
+│   ├── firebase.js                # Firebase configuration
+│   └── ...
+├── firebase_read_predict.py       # ML prediction service
+├── mpu_angle_model.pkl           # Trained ML model
+├── requirements.txt              # Python dependencies
+└── package.json                  # Node.js dependencies
+```
 
-### Analyzing the Bundle Size
+## Machine Learning Model
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+The system uses a trained scikit-learn model (`mpu_angle_model.pkl`) that:
+- Takes 12-dimensional input (accelerometer + gyroscope data from 2 sensors)
+- Predicts knee flexion angles with high accuracy
+- Provides real-time feedback and exercise suggestions
 
-### Making a Progressive Web App
+## Demo
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Visit the integrated demo at: [https://adorable-brigadeiros-c2240e.netlify.app/](https://adorable-brigadeiros-c2240e.netlify.app/)
 
-### Advanced Configuration
+## Contributors
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- **Kelly Peng** - Project Lead & Full-Stack Development
+- **Diana Ding** - Hardware Integration & Sensor Setup
+- **Yourong Xu** - Machine Learning & Data Analysis
+- **Jialu Huang** - Frontend Development & UI/UX
 
-### Deployment
+## Advisors
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- **Candice Boyd** - T-Mobile
+- **Justin Ho** - T-Mobile  
+- **Quasheery Ahmed** - T-Mobile
+- **John Raiti** - GIX
+- **Luyao Niu** - GIX
 
-### `npm run build` fails to minify
+## Part of T-Mobile Carelink Projects
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is part of the larger T-Mobile Carelink initiative, which includes:
+1. **KneeHeal** (this project) - ACL rehabilitation monitoring
+2. **Carelink Hypertension IoT Pill Box** - Medication adherence tracking
+3. **X** - Additional healthcare monitoring solution
+
+For more information about the complete Carelink project collection, visit: [T-Mobile Carelink Projects Repository](https://github.com/marjyang/T-Mobile-Carelink-515-Projects)
+
+## License
+
+This project was developed as part of TECHIN 515 (Hardware Software Lab II) at the Global Innovation Exchange (GIX), University of Washington.
+
+## Contact
+
+For inquiries about this project, please contact the contributors or reach out to marjyang@uw.edu

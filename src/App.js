@@ -1,25 +1,63 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import SignInPage from './SignInPage';
+import ACLRehabilitationApp from './ACLRehabilitationApp';
+import DoctorPage from './DoctorPage';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  const [userType, setUserType] = useState('patient');
+  const [currentUser, setCurrentUser] = useState(null);
+  const [isSignedIn, setIsSignedIn] = useState(false);
+
+  const handleSignIn = (user) => {
+    console.log('Signing in user:', user);
+    setCurrentUser(user);
+    setIsSignedIn(true);
+    if (user.username && user.username.startsWith('dr_')) {
+      setUserType('doctor');
+    } else {
+      setUserType('patient');
+    }
+  };
+
+  const handleSignOut = () => {
+    console.log('Signing out user');
+    setCurrentUser(null);
+    setIsSignedIn(false);
+  };
+
+  const switchUserType = () => {
+    console.log('Switching from', userType, 'to', userType === 'patient' ? 'doctor' : 'patient');
+    setUserType(userType === 'patient' ? 'doctor' : 'patient');
+  };
+
+  if (!isSignedIn) {
+    return (
+      <SignInPage 
+        userType={userType} 
+        onSignIn={handleSignIn}
+        switchUserType={switchUserType}
+      />
+    );
+  }
+
+  if (userType === 'doctor') {
+    return (
+      <DoctorPage
+        user={currentUser}
+        onSignOut={handleSignOut}
+        switchUserType={switchUserType}
+      />
+    );
+  } else {
+    return (
+      <ACLRehabilitationApp 
+        user={currentUser}
+        userType={userType}
+        onSignOut={handleSignOut}
+        switchUserType={switchUserType}
+      />
+    );
+  }
 }
 
 export default App;

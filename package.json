@@ -1,22 +1,60 @@
 {
-  "name": "acl-rehab-app",
-  "version": "0.1.0",
+  "name": "kneeheal-acl-rehab-app",
+  "version": "1.0.0",
+  "description": "KneeHeal - IoT-enabled ACL rehabilitation system with real-time knee flexion angle monitoring",
   "private": true,
+  "homepage": "https://adorable-brigadeiros-c2240e.netlify.app/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/marjyang/T-Mobile-Carelink-515-Projects.git"
+  },
+  "keywords": [
+    "acl-rehabilitation",
+    "iot-healthcare",
+    "knee-monitoring",
+    "mpu-sensors",
+    "machine-learning",
+    "firebase",
+    "react",
+    "t-mobile-carelink"
+  ],
+  "authors": [
+    {
+      "name": "Kelly Peng",
+      "role": "Project Lead & Full-Stack Development"
+    },
+    {
+      "name": "Diana Ding", 
+      "role": "Hardware Integration & Sensor Setup"
+    },
+    {
+      "name": "Yourong Xu",
+      "role": "Machine Learning & Data Analysis"
+    },
+    {
+      "name": "Jialu Huang",
+      "role": "Frontend Development & UI/UX"
+    }
+  ],
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.3.0",
     "@testing-library/user-event": "^13.5.0",
+    "firebase": "^11.7.1",
+    "lucide-react": "^0.509.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-scripts": "5.0.1",
+    "recharts": "^2.15.3",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "ml-predict": "python firebase_read_predict.py"
   },
   "eslintConfig": {
     "extends": [
@@ -35,5 +73,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.3",
+    "tailwindcss": "^4.1.6"
   }
 }
