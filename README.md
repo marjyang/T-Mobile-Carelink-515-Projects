@@ -1,70 +1,229 @@
-# Getting Started with Create React App
+# T-Mobile Carelink Projects
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Innovative IoT Healthcare Solutions - TECHIN 515 (Hardware Software Lab II)**
 
-## Available Scripts
+This repository contains three cutting-edge healthcare monitoring projects developed by GIX Cohort 8 as part of T-Mobile's remote healthcare data collection system initiative. Each project addresses critical healthcare challenges through IoT sensors, machine learning, and real-time data analytics.
 
-In the project directory, you can run:
+## 🏥 Project Collection
 
-### `npm start`
+### 1. **KneeHeal** - ACL Rehabilitation Monitoring
+**📂 Branch: [`kneeheal-project`](https://github.com/marjyang/T-Mobile-Carelink-515-Projects/tree/kneeheal-project)**
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Advanced ACL rehabilitation system using dual MPU6050 sensors and machine learning to track knee flexion angles during physical therapy exercises.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+**Key Features:**
+- Real-time knee angle monitoring with dual sensors
+- Machine learning prediction model for accurate angle calculation
+- React-based patient and doctor dashboards
+- Firebase real-time data synchronization
+- Progress tracking and exercise recommendations
 
-### `npm test`
+**Technology Stack:** React.js, Firebase, Python ML, MPU6050 sensors, Arduino/ESP32
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**Contributors:** Kelly Peng, Diana Ding, Yourong Xu, Jialu Huang
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 2. **Carelink Hypertension IoT Pill Box**
+**📂 Folder: [`Carelink_Pillbox`](https://github.com/marjyang/T-Mobile-Carelink-515-Projects/tree/main/Carelink_Pillbox)**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Smart medication adherence monitoring system for hypertension management with automated pill dispensing and tracking.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+**Key Features:**
+- Automated pill dispensing with scheduling
+- Medication adherence tracking
+- Real-time notifications and alerts
+- Healthcare provider monitoring dashboard
+- Integration with health records
 
-### `npm run eject`
+**Contributors:** Yishuai Zheng, Hannah Xiao, Chang Li, Marjorie Yang
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 3. **Project X** - Additional Healthcare Solution
+**📂 Status: In Development**
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Comprehensive healthcare monitoring solution addressing additional patient care needs.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+**Contributors:** Auria Zhang, Jazmyn Zhang, Yunqing Zhao, Shangming Zhuo
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 🚀 Live Demo
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+**Visit the integrated demo website:**  
+**🔗 [https://adorable-brigadeiros-c2240e.netlify.app/](https://adorable-brigadeiros-c2240e.netlify.app/)**
 
-### Code Splitting
+Navigate between projects to see live demonstrations of each healthcare solution.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 🛠️ Quick Start Guide
 
-### Analyzing the Bundle Size
+### For KneeHeal Project:
+```bash
+# Clone repository and switch to KneeHeal branch
+git clone https://github.com/marjyang/T-Mobile-Carelink-515-Projects.git
+cd T-Mobile-Carelink-515-Projects
+git checkout kneeheal-project
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+# Install dependencies
+npm install
+pip install -r requirements.txt
 
-### Making a Progressive Web App
+# Start applications
+npm start                          # React app (localhost:3000)
+python firebase_read_predict.py    # ML prediction service
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### For Carelink Pill Box:
+```bash
+# Clone repository and navigate to Pill Box project
+git clone https://github.com/marjyang/T-Mobile-Carelink-515-Projects.git
+cd T-Mobile-Carelink-515-Projects/Carelink_Pillbox
 
-### Advanced Configuration
+# Follow setup instructions in the folder
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## 📊 Project Overview
 
-### Deployment
+| Project | Technology | Status | Branch/Folder |
+|---------|------------|--------|---------------|
+| **KneeHeal** | React, Firebase, Python ML, MPU6050 | ✅ Complete | [`kneeheal-project`](https://github.com/marjyang/T-Mobile-Carelink-515-Projects/tree/kneeheal-project) |
+| **Pill Box** | IoT Sensors, Cloud Backend | ✅ Complete | [`Carelink_Pillbox`](https://github.com/marjyang/T-Mobile-Carelink-515-Projects/tree/main/Carelink_Pillbox) |
+| **Project X** | TBD | 🚧 In Progress | TBD |
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## 🏗️ Repository Structure
 
-### `npm run build` fails to minify
+```
+T-Mobile-Carelink-515-Projects/
+├── main branch (this README)
+├── kneeheal-project branch/
+│   ├── src/                     # React application
+│   ├── firebase_read_predict.py # ML prediction service
+│   ├── mpu_angle_model.pkl     # Trained ML model
+│   ├── SETUP.md               # Detailed setup guide
+│   └── ...
+├── Carelink_Pillbox/          # Pill box project folder
+│   └── ...
+└── src/                       # Shared components
+    └── ...
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 🎯 Project Goals
+
+These projects advance T-Mobile's healthcare initiative by:
+
+- **Improving Patient Outcomes**: Real-time monitoring and feedback systems
+- **Enhancing Care Delivery**: Tools for healthcare providers to monitor patients remotely
+- **Reducing Healthcare Costs**: Preventive care through continuous monitoring
+- **Advancing IoT in Healthcare**: Practical applications of connected medical devices
+- **Data-Driven Insights**: Machine learning for predictive healthcare analytics
+
+## 🔬 Technical Innovation
+
+### KneeHeal Innovations:
+- **Dual Sensor Fusion**: Advanced MPU6050 sensor integration for accurate movement tracking
+- **Real-time ML Predictions**: Edge computing for immediate feedback during exercises
+- **Intuitive UI/UX**: Patient-friendly interfaces for rehabilitation guidance
+- **Clinical Integration**: Healthcare provider dashboards for patient monitoring
+
+### Carelink Pill Box Innovations:
+- **Smart Dispensing**: Automated medication management with IoT sensors
+- **Adherence Tracking**: Real-time monitoring of medication compliance
+- **Alert Systems**: Multi-channel notifications for patients and caregivers
+
+## 👥 Contributors & Teams
+
+### KneeHeal Team
+- **Kelly Peng** - Project Lead & Full-Stack Development
+- **Diana Ding** - Hardware Integration & Sensor Systems
+- **Yourong Xu** - Machine Learning & Data Analytics
+- **Jialu Huang** - Frontend Development & UI/UX Design
+
+### Carelink Pill Box Team
+- **Yishuai Zheng** - Hardware & IoT Development
+- **Hannah Xiao** - Software Development
+- **Chang Li** - System Integration
+- **Marjorie Yang** - Project Management & Documentation
+
+### Project X Team
+- **Auria Zhang** - Development Lead
+- **Jazmyn Zhang** - Hardware Integration
+- **Yunqing Zhao** - Software Development
+- **Shangming Zhuo** - System Architecture
+
+## 🎓 Academic & Industry Partnership
+
+### Academic Institution
+**Global Innovation Exchange (GIX) - University of Washington**
+- **Course**: TECHIN 515 (Hardware Software Lab II)
+- **Program**: Technology Innovation Master's Program
+- **Cohort**: GIX Cohort 8
+
+### Industry Partner
+**T-Mobile**
+- **Initiative**: Remote Healthcare Data Collection System
+- **Focus**: Expanding healthcare accessibility through technology
+
+### Project Advisors
+- **Candice Boyd** - T-Mobile Healthcare Innovation
+- **Justin Ho** - T-Mobile Technical Leadership
+- **Quasheery Ahmed** - T-Mobile Project Management
+- **John Raiti** - GIX Faculty Advisor
+- **Luyao Niu** - GIX Technical Advisor
+
+## 📈 Impact & Applications
+
+### Healthcare Impact
+- **Patient Engagement**: Interactive systems that motivate patient participation
+- **Clinical Efficiency**: Streamlined monitoring reduces healthcare provider workload
+- **Data Collection**: Rich datasets for healthcare research and improvement
+- **Accessibility**: Remote monitoring solutions for underserved populations
+
+### Technical Applications
+- **IoT in Healthcare**: Practical implementations of connected medical devices
+- **Edge Computing**: Real-time processing for immediate patient feedback
+- **ML in Medicine**: Applied machine learning for predictive healthcare
+- **User-Centered Design**: Healthcare interfaces designed for diverse user needs
+
+## 🔗 External Resources
+
+- **Live Demo**: [https://adorable-brigadeiros-c2240e.netlify.app/](https://adorable-brigadeiros-c2240e.netlify.app/)
+- **GIX Program**: [University of Washington Global Innovation Exchange](https://gix.uw.edu/)
+- **T-Mobile Healthcare**: [T-Mobile Health Solutions](https://www.t-mobile.com/)
+
+## 📞 Contact & Support
+
+### Project Inquiries
+**Primary Contact**: marjyang@uw.edu  
+**Repository Maintainer**: Marjorie Yang
+
+### Technical Support
+For technical issues or questions about specific projects:
+1. Check the project-specific documentation in respective branches/folders
+2. Review setup guides (`SETUP.md` files)
+3. Contact project team members directly
+4. Submit issues through GitHub Issues
+
+### Collaboration Opportunities
+We welcome collaboration from:
+- Healthcare professionals interested in IoT applications
+- Developers working on similar healthcare solutions
+- Researchers in medical technology and patient monitoring
+- Industry partners exploring connected health solutions
+
+---
+
+## 📄 License & Attribution
+
+This project collection was developed as part of TECHIN 515 coursework at the Global Innovation Exchange (GIX), University of Washington, in partnership with T-Mobile.
+
+**Academic Year**: 2024-2025  
+**Course**: TECHIN 515 - Hardware Software Lab II  
+**Institution**: Global Innovation Exchange (GIX)  
+**Industry Partner**: T-Mobile
+
+For detailed licensing information, see individual project folders.
+
+---
+
+**⭐ Star this repository if these healthcare IoT solutions inspire your work!**
