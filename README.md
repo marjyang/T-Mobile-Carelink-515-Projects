@@ -27,23 +27,32 @@ Advanced ACL rehabilitation system using dual MPU6050 sensors and machine learni
 ### 2. **Carelink Hypertension IoT Pill Box**
 **📂 Folder: [`Carelink_Pillbox`](https://github.com/marjyang/T-Mobile-Carelink-515-Projects/tree/main/Carelink_Pillbox)**
 
-Smart medication adherence monitoring system for hypertension management with automated pill dispensing and tracking.
+Smart IoT-enabled pill tracking system for managing hypertension, combining sensor data and gesture detection to verify medication intake.
 
 **Key Features:**
-- Automated pill dispensing with scheduling
-- Medication adherence tracking
-- Real-time notifications and alerts
-- Healthcare provider monitoring dashboard
-- Integration with health records
+- Pill presence detection using photoresistor values
+- ESP32-CAM captures image frames and sends them to a Flask server
+- MediaPipe Pose runs on the server to detect pill-taking gestures
+- Gesture signal is smoothed using a Savitzky–Golay low-pass filter to reduce noise
+- Real-time data logging to Firebase Firestore for cloud storage
+- React-based dashboard for patients and caregivers
+- Notifications for missed doses and inconsistent behavior
+- Designed for remote monitoring and healthcare provider integration
+
+**Technology Stack:** React.js, Firebase, Flask, MediaPipe, Photoresistors, ESP32S3 Camera Module
 
 **Contributors:** Yishuai Zheng, Hannah Xiao, Chang Li, Marjorie Yang
 
 ---
 
-### 3. **Project X** - Additional Healthcare Solution
+### 3. **Project X** - ACL Rehabilitation Exercise Monitoring
 **📂 Status: In Development**
 
-Comprehensive healthcare monitoring solution addressing additional patient care needs.
+One-sentence description
+
+Key features
+
+Technology Stack
 
 **Contributors:** Auria Zhang, Jazmyn Zhang, Yunqing Zhao, Shangming Zhuo
 
@@ -54,7 +63,7 @@ Comprehensive healthcare monitoring solution addressing additional patient care 
 **Visit the integrated demo website:**  
 **🔗 [https://adorable-brigadeiros-c2240e.netlify.app/](https://adorable-brigadeiros-c2240e.netlify.app/)**
 
-Navigate between projects to see live demonstrations of each healthcare solution.
+Navigate between projects to replicate live demonstrations of each healthcare solution.
 
 ## 🛠️ Quick Start Guide
 
@@ -140,10 +149,10 @@ These projects advance T-Mobile's healthcare initiative by:
 - **Jialu Huang** - Frontend Development & UI/UX Design
 
 ### Carelink Pill Box Team
-- **Yishuai Zheng** - Hardware & IoT Development
-- **Hannah Xiao** - Software Development
-- **Chang Li** - System Integration
-- **Marjorie Yang** - Project Management & Documentation
+- **Yishuai Zheng** - UI/UX Design & IoT Development
+- **Hannah Xiao** - Industrial Design & Software Development
+- **Chang Li** - Design & Frontend Development
+- **Marjorie Yang** - System Integration & Project Management
 
 ### Project X Team
 - **Auria Zhang** - Development Lead
