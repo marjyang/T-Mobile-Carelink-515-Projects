@@ -25,7 +25,7 @@ Advanced ACL rehabilitation system using dual MPU6050 sensors and machine learni
 ---
 
 ### 2. **Carelink Hypertension IoT Pill Box**
-**📂 Branch: [`Carelink_Pillbox`](https://github.com/marjyang/T-Mobile-Carelink-515-Projects/tree/carelink-pillbox-project)**
+**📂 Branch: [`carelink-pillbox-project`](https://github.com/marjyang/T-Mobile-Carelink-515-Projects/tree/carelink-pillbox-project)**
 
 Smart IoT-enabled pill tracking system for managing hypertension, combining sensor data and gesture detection to verify medication intake.
 
@@ -108,11 +108,17 @@ T-Mobile-Carelink-515-Projects/
 ├── kneeheal-project branch/
 │   ├── src/                     # React application
 │   ├── firebase_read_predict.py # ML prediction service
-│   ├── mpu_angle_model.pkl     # Trained ML model
-│   ├── SETUP.md               # Detailed setup guide
+│   ├── mpu_angle_model.pkl      # Trained ML model
+│   ├── SETUP.md                 # Detailed setup guide
 │   └── ...
 ├── carelink-pillbox-project branch/ 
-│   └── ...
+│   └── cam-esp32s3/           # Camera ESP script
+|   └── ldr-esp32s3/           # Photoresistors ESP script
+|   └── server/                # Flask server script
+|   └── portal/                # React application
+|       └── src/
+|       └── ...
+|   └── ...
 └── src/                       # Shared components
     └── ...
 ```
