@@ -149,10 +149,10 @@ These projects advance T-Mobile's healthcare initiative by:
 ## 👥 Contributors & Teams
 
 ### KneeHeal Team
-- **Kelly Peng** - Project Lead & Full-Stack Development
-- **Diana Ding** - Hardware Integration & Sensor Systems
-- **Yourong Xu** - Machine Learning & Data Analytics
-- **Jialu Huang** - Frontend Development & UI/UX Design
+- **Kelly Peng** - Full-Stack Development &Machine Learning & Data Analytics
+- **Diana Ding** - Enclosure Design & UI/UX Design 
+- **Yourong Xu** -  System Architecture
+- **Jialu Huang** -  Hardware Integration & Sensor Systems
 
 ### Carelink Pill Box Team
 - **Yishuai Zheng** - UI/UX Design & IoT Development
