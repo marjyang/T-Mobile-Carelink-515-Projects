@@ -149,7 +149,7 @@ These projects advance T-Mobile's healthcare initiative by:
 ## 👥 Contributors & Teams
 
 ### KneeHeal Team
-- **Kelly Peng** - Full-Stack Development &Machine Learning & Data Analytics
+- **Kelly Peng** - Full-Stack Development &Machine Learning 
 - **Diana Ding** - Enclosure Design & UI/UX Design 
 - **Yourong Xu** -  System Architecture
 - **Jialu Huang** -  Hardware Integration & Sensor Systems
