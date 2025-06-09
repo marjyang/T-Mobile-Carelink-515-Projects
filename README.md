@@ -92,5 +92,8 @@ You can find this code in the `portal` directory.
 7. Run `flask_server.py`
 8. Turn on the switch on the back of the pill box, wait for connection and open the lid once the LED turns red!
 
-### D) Frontend Setup 
-1. Navigate to `portal` directory and follow the README.md instructions there.
+### D) Frontend Setup (futher details in `portal`)
+1. Clone the repository and navigate to `portal` in `carelink-pillbox-project branch`.
+2. Install dependencies.
+3. Set up Firebase environment variables.
+4. Run the appplication.
