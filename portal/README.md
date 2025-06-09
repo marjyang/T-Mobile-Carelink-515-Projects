@@ -9,8 +9,10 @@ Follow these steps to run the project locally.
 ### 1. Clone the repository
 ```bash
 
-git clone git@github.com:urnotvicky-li/T-mobile-carelink-doctorportal.git
-cd T-mobile-carelink-doctorportal
+git clone https://github.com/marjyang/T-Mobile-Carelink-515-Projects.git
+cd T-Mobile-Carelink-515-Projects/
+git checkout carelink-pillbox-project
+cd portal
 
 ```
 
