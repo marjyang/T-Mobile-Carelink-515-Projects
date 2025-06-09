@@ -91,3 +91,6 @@ You can find this code in the `portal` directory.
    ```
 7. Run `flask_server.py`
 8. Turn on the switch on the back of the pill box, wait for connection and open the lid once the LED turns red!
+
+### D) Frontend Setup 
+1. Navigate to `portal` directory and follow the README.md instructions there.
