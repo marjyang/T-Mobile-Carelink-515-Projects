@@ -48,11 +48,17 @@ Smart IoT-enabled pill tracking system for managing hypertension, combining sens
 ### 3. **Project X** - ACL Rehabilitation Exercise Monitoring
 **📂 Status: In Development**
 
-One-sentence description
+Intelligent ACL rehab tracker using TOF and SEN0221 sensors to detect and validate straight leg raise motions with real-time feedback and Firebase integration.
 
-Key features
-
-Technology Stack
+**Key features**
+- Dual-sensor system using TOF (VL53L0X) for height and SEN0221 for angle
+- Real-time motion tracking for straight leg raise
+- Automatic repetition counting based on height thresholds and posture validity
+- BLE data transmission from both sensors to React-based interface
+- Firebase integration for cloud-based data storage and progress monitoring
+- Patient-therapist dashboard with intuitive feedback
+  
+**Technology Stack:** React.js, Firebase (Firestore & Storage), ESP32-C3, ESP32-S3, VL53L0X (TOF), SEN0221, JavaScript, PDFMake, BLE
 
 **Contributors:** Auria Zhang, Jazmyn Zhang, Yunqing Zhao, Shangming Zhuo
 
