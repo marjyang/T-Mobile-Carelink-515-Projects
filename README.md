@@ -46,7 +46,7 @@ Smart IoT-enabled pill tracking system for managing hypertension, combining sens
 ---
 
 ### 3. **Project X** - ACL Rehabilitation Exercise Monitoring
-**📂 Status: In Development**
+**📂 Branch: [`Xheal-project`](https://github.com/marjyang/T-Mobile-Carelink-515-Projects/tree/Xheal-project)**
 
 Intelligent ACL rehab tracker using TOF and SEN0221 sensors to detect and validate straight leg raise motions with real-time feedback and Firebase integration.
 
