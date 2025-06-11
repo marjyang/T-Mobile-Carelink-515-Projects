@@ -104,7 +104,7 @@ cd T-Mobile-Carelink-515-Projects/Carelink_Pillbox
 |---------|------------|--------|---------------|
 | **KneeHeal** | React, Firebase, Python ML, MPU6050 | ✅ Complete | [`kneeheal-project`](https://github.com/marjyang/T-Mobile-Carelink-515-Projects/tree/kneeheal-project) |
 | **Pill Box** | IoT Sensors, Cloud Backend | ✅ Complete | [`Carelink_Pillbox`](https://github.com/marjyang/T-Mobile-Carelink-515-Projects/tree/main/Carelink_Pillbox) |
-| **Project X** | TBD | 🚧 In Progress | TBD |
+| **Project X** | React, Firebase,Signal Process, VL53L0X, SEN0221  | ✅ Complete | [`Xheal-project`](https://github.com/marjyang/T-Mobile-Carelink-515-Projects/tree/Xheal-project) |
 
 ## 🏗️ Repository Structure
 
