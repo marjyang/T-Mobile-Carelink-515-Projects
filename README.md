@@ -47,49 +47,53 @@ Next-gen ACL rehab monitoring solution using dual BLE sensors (ToF and angle) fo
 ![User Flow](https://github.com/marjyang/T-Mobile-Carelink-515-Projects/raw/Xheal-project/assets/device.JPG)
 
 
+  <br>
   
   **Device A – Angle Sensor Module (SEN0221)**
 
-Overview
+**Overview**
+
 Device A is a thigh-mounted angle detection module designed to capture precise joint angles during rehabilitation exercises such as hip flexion and hamstring curl. It leverages the SEN0221 rotary position sensor, providing high-resolution angular measurements. The module is powered by a Seeed XIAO ESP32C3, with signal conditioning via ADS1115 (ADC) and voltage boost using TPS61023 to ensure stable power delivery.
 
-Circuit Components
+**Circuit Components**
 
-SEN0221: High-accuracy analog rotary angle sensor
+- SEN0221: High-accuracy analog rotary angle sensor
 
-ADS1115: 16-bit I²C ADC for precise analog-to-digital conversion
+- ADS1115: 16-bit I²C ADC for precise analog-to-digital conversion
 
-TPS61023: Power booster to supply a steady 5V from 3.3V
+- TPS61023: Power booster to supply a steady 5V from 3.3V
 
-ESP32-C3: BLE-enabled MCU for wireless data transmission
+- ESP32-C3: BLE-enabled MCU for wireless data transmission
 
-Assembly Design
+**Assembly Design**
 
-Modular 3D-printed enclosure with secure Velcro straps
+- Modular 3D-printed enclosure with secure Velcro straps
 
-Anti-slip clip to maintain sensor alignment during movement
+- Anti-slip clip to maintain sensor alignment during movement
 
-Compact, wearable form factor optimized for comfort and data reliability
+- Compact, wearable form factor optimized for comfort and data reliability  
 
+<br>
   
   **Device B – Distance Sensor Module (TOF)**
 
-Overview
+**Overview**
+
 Device B is a foot-mounted distance measurement unit designed for real-time height tracking during heel raise and straight leg raise exercises. It utilizes a VL53L0X Time-of-Flight (TOF) sensor for sub-centimeter distance accuracy. The enclosure is optimized with an adaptive rotation mount, allowing 90° rotation to support both standing and supine positions, ensuring the sensor consistently faces the floor for accurate readings.
 
-Electronics
+**Electronics**
 
-VL53L0X: TOF laser rangefinder sensor for vertical displacement
+- VL53L0X: TOF laser rangefinder sensor for vertical displacement
 
-ESP32-S3: BLE-enabled MCU with integrated support for Firebase transmission
+- ESP32-S3: BLE-enabled MCU with integrated support for Firebase transmission
 
-Enclosure Design
+**Enclosure Design**
 
-Iteratively developed to ensure stability and flexibility
+- Iteratively developed to ensure stability and flexibility
 
-Adjustable straps for secure foot placement
+- Adjustable straps for secure foot placement
 
-Final casing includes T-Mobile branding and compact housing for improved wearability
+- Final casing includes T-Mobile branding and compact housing for improved wearability
 
 ## System Overview
 
