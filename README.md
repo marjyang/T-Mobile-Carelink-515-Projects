@@ -44,6 +44,7 @@ Next-gen ACL rehab monitoring solution using dual BLE sensors (ToF and angle) fo
   Bluetooth Low Energy (BLE) for real-time data streaming
 
 ## Device Hardware Overview
+![User Flow](https://github.com/marjyang/T-Mobile-Carelink-515-Projects/raw/Xheal-project/assets/device.JPG)
 
 **Device A – Angle Sensor Module (SEN0221)**
 
