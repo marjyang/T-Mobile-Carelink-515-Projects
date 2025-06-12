@@ -181,7 +181,7 @@ These projects advance T-Mobile's healthcare initiative by:
 - **Chang Li** - Design & Frontend Development
 - **Marjorie Yang** - System Integration & Project Management
 
-### Project X Team
+### X Heal Team
 - **Auria Zhang** - Full-Stack Development & Project Management
 - **Yunqing Zhao** - Software Development & System Integration
 - **Jazmyn Zhang** - Hardware Integration (Heel Device) & UI/UX Design (Doctor Portal) 
