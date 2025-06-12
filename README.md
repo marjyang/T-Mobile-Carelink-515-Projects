@@ -167,10 +167,10 @@ These projects advance T-Mobile's healthcare initiative by:
 - **Marjorie Yang** - System Integration & Project Management
 
 ### Project X Team
-- **Auria Zhang** - Development Lead
-- **Jazmyn Zhang** - Hardware Integration
-- **Yunqing Zhao** - Software Development
-- **Shangming Zhuo** - System Architecture
+- **Auria Zhang** - Full-Stack Development & Project Management
+- **Yunqing Zhao** - Software Development & System Integration
+- **Jazmyn Zhang** - Hardware Integration (Heel Device) & UI/UX Design (Doctor Portal) 
+- **Shangming Zhuo** - Hardware Integration (Knee Device)& UI/UX Design (Patient Portal) 
 
 ## 🎓 Academic & Industry Partnership
 
