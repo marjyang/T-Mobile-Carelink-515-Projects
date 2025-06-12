@@ -4,8 +4,7 @@
 Next-gen ACL rehab monitoring solution using dual BLE sensors (ToF and angle) for straight leg raise exercises, combining precise measurement, real-time tracking, and Firebase-integrated feedback.
 
 ## User Flow
-
-
+![image]([https://github.com/user-attachments/assets/2e47837d-cab3-49e7-9ff1-ba3d073bdde5](https://github.com/marjyang/T-Mobile-Carelink-515-Projects/raw/Xheal-project/assets/userflow.png)
 
 ## Key Features
 
