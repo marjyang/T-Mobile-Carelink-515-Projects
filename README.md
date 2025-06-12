@@ -105,11 +105,11 @@ You can find this code in the `portal` directory.
 | 2 | OV2640 Camera Module | 24-pin FPC camera module compatible with ESP32-S3 | 1 | For gesture detection |
 | 3 | Photoresistors (LDRs) | GL5528 or similar | 7 | Connected to pill detection ESP32-S3 |
 | 4 | 10kΩ Resistors | For voltage divider with LDRs | 7 | One per photoresistor |
-| 5 | White S LED | For voltage divider with LDRs | 7 | Indicate need for refill |
-| 6 | Red S LED | For voltage divider with LDRs | 7 | Indicate need to take medication |
-| 7 | 220Ω Resistors | For voltage divider with LDRs | 7 | One per LED |
-| 8 | Push Button | SPDT switch | 1 | Triggers data capture when lid is opened |
-| 9 | Power Switch | SPDT switch | 1 | On/off switch for battery |
+| 5 | White S LED | For voltage divider with LDRs | 1 | Indicate need for refill |
+| 6 | Red S LED | For voltage divider with LDRs | 1 | Indicate need to take medication |
+| 7 | 220Ω Resistors | For voltage divider with LDRs | 2 | One per LED |
+| 8 | Push Button | SPDT PUSH switch | 1 | Triggers data capture when lid is opened |
+| 9 | Power Switch | SPDT toggle switch | 1 | On/off switch for battery |
 | 10 | Shared Battery (3.7V LiPo) | Rechargeable, 2000mAh | 1 | Powers both ESP32-S3 boards |
 | 11 | Custom PCB | Final design base attached as .ZIP file | 1 | Connects above components |
 | 12 | 3D Printed Enclosure | Attached in `enclosure` directory | 1 | Ensure wires from camera threads through the middle of the top layer, connecting to the bottom layer |
