@@ -3,6 +3,7 @@
 This guide provides detailed instructions for setting up the KneeHeal ACL rehabilitation monitoring system.
 
 ## Hardware Requirements
+![IMG_3169](https://github.com/user-attachments/assets/16037991-b99f-40b9-89cf-56f859041655)
 
 ### Sensors
 - 2x MPU6050 accelerometer/gyroscope sensors
