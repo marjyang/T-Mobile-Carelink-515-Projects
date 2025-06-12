@@ -70,6 +70,7 @@ Anti-slip clip to maintain sensor alignment during movement
 Compact, wearable form factor optimized for comfort and data reliability
 
 
+
 **Device B – Distance Sensor Module (TOF)**
 
 Overview
