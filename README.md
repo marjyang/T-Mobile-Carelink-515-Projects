@@ -1,6 +1,5 @@
 # Carelink Pill Box
-A remote monitoring solution that provides doctors with adherence data and empowers patients with greater visibility into their hypertension medication habits. [--> Project Presentation
-](https://docs.google.com/presentation/d/1LSaqBJPW_dTAX-sO0YWhZtEC9UaZZX-oVO5Y69zrGgA/edit?usp=sharing
+A remote monitoring solution that provides doctors with adherence data and empowers patients with greater visibility into their hypertension medication habits. [ --> Project Presentation](https://docs.google.com/presentation/d/1LSaqBJPW_dTAX-sO0YWhZtEC9UaZZX-oVO5Y69zrGgA/edit?usp=sharing)
 
 ![pillbox](https://github.com/user-attachments/assets/7dc9f785-0ac4-4b5c-8cc2-9723f4adeae2)
 
@@ -95,11 +94,17 @@ You can find this code in the `portal` directory.
 7. Run `flask_server.py`
 8. Turn on the switch on the back of the pill box, wait for connection and open the lid once the LED turns red!
 
-### D) Frontend Setup (futher details in `portal`)
+### D) Frontend Setup (further details in `portal`)
 1. Clone the repository and navigate to `portal` in `carelink-pillbox-project branch`.
-2. Install dependencies.
-3. Set up Firebase environment variables.
-4. Run the appplication.
+   ```bash
+   git clone https://github.com/marjyang/T-Mobile-Carelink-515-Projects.git
+   cd T-Mobile-Carelink-515-Projects/
+   git checkout carelink-pillbox-project
+   cd portal
+   ```
+3. Install dependencies with "npm install"
+5. Set up Firebase environment variables. (more details in `portal` README)
+6. Run the appplication with "npm start"
 
 ## BOM
 | Item    | Component | Description | Quantity | Notes |
