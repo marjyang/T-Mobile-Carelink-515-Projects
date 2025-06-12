@@ -138,8 +138,10 @@ All data is synced in real-time to Firebase and visualized via React dashboard.
 - Set Bluetooth name: `DeviceB`  
 - Match BLE UUIDs with frontend
 
-### B) React Frontend Setup
+### B) Firebase Configuration
+- Edit your own firbase condiguration in: `firebase.ts`
 
+### C) React Frontend Setup
 ```bash
 git clone https://github.com/marjyang/T-Mobile-Carelink-515-Projects.git
 cd T-Mobile-Carelink-515-Projects
