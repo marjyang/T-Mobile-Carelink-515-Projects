@@ -46,6 +46,8 @@ Next-gen ACL rehab monitoring solution using dual BLE sensors (ToF and angle) fo
 
 ## System Overview
 
+![User Flow](https://github.com/marjyang/T-Mobile-Carelink-515-Projects/raw/Xheal-project/assets/datapipeline.png)
+
 Project X is a multi-exercise ACL rehabilitation monitoring system supporting Hip Flexion, Hamstring Curl, and Heel Raise, each with custom sensor logic tailored to clinical movement standards.
 
 - **Sensors**: Dual BLE (ESP32-C3/S3)  
