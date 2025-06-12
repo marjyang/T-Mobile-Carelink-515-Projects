@@ -1,6 +1,7 @@
 # Carelink Pill Box
 A remote monitoring solution that provides doctors with adherence data and empowers patients with greater visibility into their hypertension medication habits. 
 
+
 ## User Flow
 ![image](https://github.com/user-attachments/assets/2e47837d-cab3-49e7-9ff1-ba3d073bdde5)
 
@@ -97,3 +98,31 @@ You can find this code in the `portal` directory.
 2. Install dependencies.
 3. Set up Firebase environment variables.
 4. Run the appplication.
+
+## BOM
+| Item    | Component | Description | Quantity | Notes |
+| -------- | ------- | -------- | ------- | ------ |
+| 1 | ESP32-S3 Dev Board | XIAO ESP32S3 or equivalent | 2 | One for gesture detection (camera), one for pill detection (photoresistors) |
+| 2 | OV2640 Camera Module | 24-pin FPC camera module compatible with ESP32-S3 | 1 | For gesture detection |
+| 3 | Photoresistors (LDRs) | GL5528 or similar | 7 | Connected to the second ESP32-S3 |
+| 4 | 10kΩ Resistors | For voltage divider with LDRs | 7 | One per photoresistor |
+| 5 | White S LED | For voltage divider with LDRs | 7 | One per photoresistor |
+| 6 | Red S LED | For voltage divider with LDRs | 7 | One per photoresistor |
+| 7 | 220Ω Resistors | For voltage divider with LDRs | 7 | One per photoresistor |
+| 8 | Push Button | SPDT switch | 1 | Triggers data capture when lid is opened |
+| 9 | Power Switch | SPDT switch | 1 | On/off switch for battery |
+| 10 | Shared Battery (3.7V LiPo) | Rechargeable, 2000mAh | 1 | Powers both ESP32-S3 boards |
+| 11 | Custom PCB | Final design base attached as .ZIP file | 1 | Connects above components |
+| 12 | 3D Printed Enclosure | Attached in `enclosure` directory | 1 | Ensure wires from camera threads through the middle of the top layer, connecting to the bottom layer |
+| 13 | Small screw | Thread between top and middle enclosure layers | 2 | Ensure length is not too short to thread through the dedicated area |
+| 14 | Mirror | Part of the enclosure, 2"x2" | 1 | Ensure width is shallow enough for lid to close |
+| 15 | Breadboard | Circuit prototyping | 1-2 | For testing purposes |
+| 16 | Jumper Wires | Circuit prototyping | Varies | For testing purposes |
+
+
+## Hardware Connections
+
+
+
+
+
