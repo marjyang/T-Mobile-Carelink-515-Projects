@@ -3,6 +3,8 @@ A remote monitoring solution that provides doctors with adherence data and empow
 
 ![pillbox](https://github.com/user-attachments/assets/7dc9f785-0ac4-4b5c-8cc2-9723f4adeae2)
 
+[Project Presentation
+](https://docs.google.com/presentation/d/1LSaqBJPW_dTAX-sO0YWhZtEC9UaZZX-oVO5Y69zrGgA/edit?usp=sharing)
 
 ## User Flow
 ![image](https://github.com/user-attachments/assets/2e47837d-cab3-49e7-9ff1-ba3d073bdde5)
