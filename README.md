@@ -46,7 +46,9 @@ Next-gen ACL rehab monitoring solution using dual BLE sensors (ToF and angle) fo
 ## Device Hardware Overview
 ![User Flow](https://github.com/marjyang/T-Mobile-Carelink-515-Projects/raw/Xheal-project/assets/device.JPG)
 
-**Device A – Angle Sensor Module (SEN0221)**
+
+  
+  **Device A – Angle Sensor Module (SEN0221)**
 
 Overview
 Device A is a thigh-mounted angle detection module designed to capture precise joint angles during rehabilitation exercises such as hip flexion and hamstring curl. It leverages the SEN0221 rotary position sensor, providing high-resolution angular measurements. The module is powered by a Seeed XIAO ESP32C3, with signal conditioning via ADS1115 (ADC) and voltage boost using TPS61023 to ensure stable power delivery.
@@ -69,9 +71,8 @@ Anti-slip clip to maintain sensor alignment during movement
 
 Compact, wearable form factor optimized for comfort and data reliability
 
-
-
-**Device B – Distance Sensor Module (TOF)**
+  
+  **Device B – Distance Sensor Module (TOF)**
 
 Overview
 Device B is a foot-mounted distance measurement unit designed for real-time height tracking during heel raise and straight leg raise exercises. It utilizes a VL53L0X Time-of-Flight (TOF) sensor for sub-centimeter distance accuracy. The enclosure is optimized with an adaptive rotation mount, allowing 90° rotation to support both standing and supine positions, ensuring the sensor consistently faces the floor for accurate readings.
