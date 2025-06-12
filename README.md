@@ -126,15 +126,22 @@ T-Mobile-Carelink-515-Projects/
 │   ├── SETUP.md                 # Detailed setup guide
 │   └── ...
 ├── carelink-pillbox-project branch/ 
-│   └── cam-esp32s3/           # Camera ESP script
-|   └── ldr-esp32s3/           # Photoresistors ESP script
-|   └── server/                # Flask server script
-|   └── portal/                # React application
-|       └── src/
-|       └── ...
-|   └── ...
-└── src/                       # Shared components
+│   └── cam-esp32s3/             # Camera ESP script
+│   └── ldr-esp32s3/             # Photoresistors ESP script
+│   └── server/                  # Flask server script
+│   └── portal/                  # React application
+│       └── src/
+│       └── ...
+│   └── ...
+├── Xheal-project branch/
+│   ├── Arduino-code/           # ESP32 firmware for angle and height sensors
+│   ├── assets/                 # Device photos, schematics, and assembly diagrams
+│   ├── doctor-portal/          # Doctor-facing React dashboard
+│   ├── patient-portal/         # Patient-facing React dashboard
+│   └── README.md               # Project README with setup, flow, and description
+└── src/                        # Shared components
     └── ...
+
 ```
 
 ## 🎯 Project Goals
