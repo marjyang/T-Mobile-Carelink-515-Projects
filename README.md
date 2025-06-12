@@ -1,6 +1,5 @@
 # Project X - ACL Rehabilitation Exercise Monitoring
 
-## One-sentence Description  
 Next-gen ACL rehab monitoring solution using dual BLE sensors (ToF and angle) for straight leg raise exercises, combining precise measurement, real-time tracking, and Firebase-integrated feedback.
 
 ## User Flow
