@@ -192,6 +192,11 @@ python firebase_read_predict.py
 3. Verify real-time data updates
 4. Check charts and visualizations
 
+### deployment
+🔗 https://adorable-brigadeiros-c2240e.netlify.app/
+
+
+
 ## Troubleshooting
 
 ### Common Issues
