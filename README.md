@@ -1,6 +1,9 @@
 # Carelink Pill Box
 A remote monitoring solution that provides doctors with adherence data and empowers patients with greater visibility into their hypertension medication habits. 
 
+![pillbox](https://github.com/user-attachments/assets/7dc9f785-0ac4-4b5c-8cc2-9723f4adeae2)
+
+
 ## User Flow
 ![image](https://github.com/user-attachments/assets/2e47837d-cab3-49e7-9ff1-ba3d073bdde5)
 
@@ -101,26 +104,22 @@ You can find this code in the `portal` directory.
 ## BOM
 | Item    | Component | Description | Quantity | Notes |
 | -------- | ------- | -------- | ------- | ------ |
-| 1 | ESP32-S3 Dev Board | XIAO ESP32S3 or equivalent | 2 | One for gesture detection (camera), one for pill detection (photoresistors) |
-| 2 | OV2640 Camera Module | 24-pin FPC camera module compatible with ESP32-S3 | 1 | For gesture detection |
+| 1 | ESP32-S3 Dev Board | XIAO ESP32-S3 or equivalent | 2 | One for pill detection (photoresistors), one for gesture detection (camera) |
+| 2 | OV2640 Camera Module | 24-pin FPC camera module compatible with ESP32-S3 | 1 | For gesture detection ESP32-S3 |
 | 3 | Photoresistors (LDRs) | GL5528 or similar | 7 | Connected to pill detection ESP32-S3 |
 | 4 | 10kΩ Resistors | For voltage divider with LDRs | 7 | One per photoresistor |
-| 5 | White S LED | For voltage divider with LDRs | 1 | Indicate need for refill |
-| 6 | Red S LED | For voltage divider with LDRs | 1 | Indicate need to take medication |
-| 7 | 220Ω Resistors | For voltage divider with LDRs | 2 | One per LED |
+| 5 | White S LED | Indicate need for refill | 1 | Ensure these are size S |
+| 6 | Red S LED | Indicate need to take medication | 1 | Ensure these are size S |
+| 7 | 220Ω Resistors | For safe use of LEDs | 2 | One per LED |
 | 8 | Push Button | SPDT PUSH switch | 1 | Triggers data capture when lid is opened |
 | 9 | Power Switch | SPDT toggle switch | 1 | On/off switch for battery |
 | 10 | Shared Battery (3.7V LiPo) | Rechargeable, 2000mAh | 1 | Powers both ESP32-S3 boards |
 | 11 | Custom PCB | Final design base attached as .ZIP file | 1 | Connects above components |
-| 12 | 3D Printed Enclosure | Attached in `enclosure` directory | 1 | Ensure wires from camera threads through the middle of the top layer, connecting to the bottom layer |
+| 12 | 3D Printed Enclosure | Custom pill box casing with slots and mounting | 1 | STL files provided in /enclosure/ - ensure wires from camera threads through the middle of the top layer, connecting to the bottom layer |
 | 13 | Small screw | Thread between top and middle enclosure layers | 2 | Ensure length is not too short to thread through the dedicated area |
-| 14 | Mirror | Part of the enclosure, 2"x2" | 1 | Ensure width is shallow enough for lid to close |
+| 14 | Mirror | Part of the enclosure to help users see positioning of camera | 1 | 2"x2", ensure width is shallow enough for lid to close |
 | 15 | Breadboard | Circuit prototyping | 1-2 | For testing purposes |
 | 16 | Jumper Wires | Circuit prototyping | Varies | For testing purposes |
-
-
-## Hardware Connections
-
 
 
 
