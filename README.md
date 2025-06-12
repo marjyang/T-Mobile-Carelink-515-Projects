@@ -3,11 +3,9 @@
 ## One-sentence Description  
 Next-gen ACL rehab monitoring solution using dual BLE sensors (ToF and angle) for straight leg raise exercises, combining precise measurement, real-time tracking, and Firebase-integrated feedback.
 
----
 ## User Flow
 
 
----
 
 ## Key Features
 
@@ -29,7 +27,6 @@ Next-gen ACL rehab monitoring solution using dual BLE sensors (ToF and angle) fo
 - **Doctor-Patient Portal Integration**  
   Supports data visualization and centralized login with other Carelink+ projects.
 
----
 
 ## Technology Stack
 
@@ -48,7 +45,6 @@ Next-gen ACL rehab monitoring solution using dual BLE sensors (ToF and angle) fo
 - **Connectivity**:  
   Bluetooth Low Energy (BLE) for real-time data streaming
 
----
 
 ## System Overview
 
@@ -76,7 +72,6 @@ Project X is a multi-exercise ACL rehabilitation monitoring system supporting Hi
 
 All data is synced in real-time to Firebase and visualized via React dashboard.
 
----
 
 ## Setup Instructions
 
@@ -95,7 +90,6 @@ All data is synced in real-time to Firebase and visualized via React dashboard.
 - Upload: `heightSensor.ino`  
 - Set Bluetooth name: `HeightSensor`  
 
----
 
 ### B) React Frontend Setup
 
