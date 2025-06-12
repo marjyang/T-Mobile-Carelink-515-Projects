@@ -125,22 +125,18 @@ All data is synced in real-time to Firebase and visualized via React dashboard.
 
 
 ## Setup Instructions
-
 ### A) Upload Sensor Firmware
-
 #### 1. Angle Sensor (ESP32-C3)
-- Use PlatformIO  
 - Board: `Seeed Studio XIAO ESP32C3`  
 - Upload: `angleSensor.ino`  
-- Set Bluetooth name: `AngleSensor`  
+- Set Bluetooth name: `DeviceA`  
 - Match BLE UUIDs with frontend
 
 #### 2. Height Sensor (ESP32-S3, ToF)
-- Use PlatformIO  
 - Board: `Seeed Studio XIAO ESP32S3`  
 - Upload: `heightSensor.ino`  
-- Set Bluetooth name: `HeightSensor`  
-
+- Set Bluetooth name: `DeviceB`  
+- Match BLE UUIDs with frontend
 
 ### B) React Frontend Setup
 
