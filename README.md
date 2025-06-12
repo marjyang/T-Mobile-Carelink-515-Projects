@@ -91,17 +91,31 @@ python firebase_read_predict.py    # ML prediction service
 
 ### For Carelink Pill Box:
 ```bash
-# Clone repository and navigate to Pill Box project
+# 1. Clone the repository and switch to the Pill Box branch
 git clone https://github.com/marjyang/T-Mobile-Carelink-515-Projects.git
-cd T-Mobile-Carelink-515-Projects/Carelink_Pillbox
+cd T-Mobile-Carelink-515-Projects
+git checkout carelink-pillbox-project
 
-# Follow setup instructions in the folder
+# 2. Upload ESP32 code
+# (Use Arduino IDE or PlatformIO to flash code in /esp32/ after editing Wi-Fi SSID and password)
+
+# 3. Run the React frontend (patient/caregiver portal)
+cd portal
+npm install
+npm start
+
+# 4. Run the Flask server (gesture recognition)
+cd ../flask_server
+python flask_server.py
 ```
 
 ### For X Heal Project:
 ```bash
+# Clone repository and navigate to Xheal branch
 git clone https://github.com/marjyang/T-Mobile-Carelink-515-Projects.git
 cd T-Mobile-Carelink-515-Projects
+git checkout Xheal-project
+cd patient-portal                   # or doctor-portal
 npm install
 npm start
 ```
