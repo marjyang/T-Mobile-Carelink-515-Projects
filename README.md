@@ -5,6 +5,9 @@
 KneeHeal is an advanced ACL rehabilitation monitoring system that uses dual MPU6050 sensors and machine learning to track knee flexion angles during physical therapy exercises. This project is part of T-Mobile's remote healthcare data collection system initiative.
 
 > **ℹ️ For detailed setup instructions, please see [SETUP.md](./SETUP.md).**
+>
+> ![Frame 5](https://github.com/user-attachments/assets/39249695-d679-4512-8886-a7cb6dfbb2b1)
+
 
 ## Key Features
 
