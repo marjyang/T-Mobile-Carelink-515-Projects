@@ -1,8 +1,6 @@
 # T-Mobile Carelink Projects
 
 **Innovative IoT Healthcare Solutions - TECHIN 515 (Hardware Software Lab II)**
-![Frame 5](https://github.com/user-attachments/assets/91382c38-37bc-45ce-a08d-417775063870)
-
 
 This repository contains three cutting-edge healthcare monitoring projects developed by GIX Cohort 8 as part of T-Mobile's remote healthcare data collection system initiative. Each project addresses critical healthcare challenges through IoT sensors, machine learning, and real-time data analytics.
 
