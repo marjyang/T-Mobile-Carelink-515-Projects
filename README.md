@@ -6,7 +6,7 @@ KneeHeal is an advanced ACL rehabilitation monitoring system that uses dual MPU6
 
 > **ℹ️ For detailed setup instructions, please see [SETUP.md](./SETUP.md).**
 
-## 🎯 Key Features
+## Key Features
 
 - Real-time knee angle monitoring with dual sensors
 - Machine learning prediction model for accurate angle calculation
@@ -14,14 +14,14 @@ KneeHeal is an advanced ACL rehabilitation monitoring system that uses dual MPU6
 - Firebase real-time data synchronization
 - Progress tracking and exercise recommendations
 
-## 🛠️ Technology Stack
+## Technology Stack
 
 - **Frontend**: React.js
 - **Backend**: Firebase
 - **Machine Learning**: Python
 - **Hardware**: MPU6050 sensors, Arduino/ESP32
 
-## 🚀 Quick Start Guide
+## Quick Start Guide
 
 ```bash
 # Install dependencies
@@ -33,7 +33,7 @@ npm start                          # React app (localhost:3000)
 python firebase_read_predict.py    # ML prediction service
 ```
 
-## 📊 Project Structure
+## Project Structure
 
 ```
 kneeheal-project/
@@ -44,21 +44,21 @@ kneeheal-project/
 └── ...
 ```
 
-## 🔬 Technical Innovation
+## Technical Innovation
 
 - **Dual Sensor Fusion**: Advanced MPU6050 sensor integration for accurate movement tracking
 - **Real-time ML Predictions**: Edge computing for immediate feedback during exercises
 - **Intuitive UI/UX**: Patient-friendly interfaces for rehabilitation guidance
 - **Clinical Integration**: Healthcare provider dashboards for patient monitoring
 
-## 👥 Team Members
+## Team Members
 
 - **Kelly Peng** - Project Lead & Full-Stack Development
 - **Diana Ding** - Hardware Integration & Sensor Systems
 - **Yourong Xu** - Machine Learning & Data Analytics
 - **Jialu Huang** - Frontend Development & UI/UX Design
 
-## 📈 Impact & Applications
+## Impact & Applications
 
 ### Healthcare Impact
 - **Patient Engagement**: Interactive systems that motivate patient participation
@@ -72,14 +72,14 @@ kneeheal-project/
 - **ML in Medicine**: Applied machine learning for predictive healthcare
 - **User-Centered Design**: Healthcare interfaces designed for diverse user needs
 
-## 📞 Contact & Support
+## Contact & Support
 
 For technical issues or questions:
 1. Check the project documentation in `SETUP.md`
 2. Contact project team members directly
 3. Submit issues through GitHub Issues
 
-## 📄 License & Attribution
+## License & Attribution
 
 This project was developed as part of TECHIN 515 coursework at the Global Innovation Exchange (GIX), University of Washington, in partnership with T-Mobile.
 
@@ -90,4 +90,4 @@ This project was developed as part of TECHIN 515 coursework at the Global Innova
 
 ---
 
-**⭐ Star this repository if this healthcare IoT solution inspires your work!**
+**Star this repository if this healthcare IoT solution inspires your work!**
