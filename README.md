@@ -1,70 +1,27 @@
-# T-Mobile Carelink Projects
+# KneeHeal - ACL Rehabilitation Monitoring System
 
-**Innovative IoT Healthcare Solutions - TECHIN 515 (Hardware Software Lab II)**
+**Innovative IoT Healthcare Solution for ACL Rehabilitation**
 
-This repository contains three cutting-edge healthcare monitoring projects developed by GIX Cohort 8 as part of T-Mobile's remote healthcare data collection system initiative. Each project addresses critical healthcare challenges through IoT sensors, machine learning, and real-time data analytics.
+KneeHeal is an advanced ACL rehabilitation monitoring system that uses dual MPU6050 sensors and machine learning to track knee flexion angles during physical therapy exercises. This project is part of T-Mobile's remote healthcare data collection system initiative.
 
-## 🏥 Project Collection
+## 🎯 Key Features
 
-### 1. **KneeHeal** - ACL Rehabilitation Monitoring
-**📂 Branch: [`kneeheal-project`](https://github.com/marjyang/T-Mobile-Carelink-515-Projects/tree/kneeheal-project)**
-
-Advanced ACL rehabilitation system using dual MPU6050 sensors and machine learning to track knee flexion angles during physical therapy exercises.
-
-**Key Features:**
 - Real-time knee angle monitoring with dual sensors
 - Machine learning prediction model for accurate angle calculation
 - React-based patient and doctor dashboards
 - Firebase real-time data synchronization
 - Progress tracking and exercise recommendations
 
-**Technology Stack:** React.js, Firebase, Python ML, MPU6050 sensors, Arduino/ESP32
+## 🛠️ Technology Stack
 
-**Contributors:** Kelly Peng, Diana Ding, Yourong Xu, Jialu Huang
+- **Frontend**: React.js
+- **Backend**: Firebase
+- **Machine Learning**: Python
+- **Hardware**: MPU6050 sensors, Arduino/ESP32
 
----
+## 🚀 Quick Start Guide
 
-### 2. **Carelink Hypertension IoT Pill Box**
-**📂 Folder: [`Carelink_Pillbox`](https://github.com/marjyang/T-Mobile-Carelink-515-Projects/tree/main/Carelink_Pillbox)**
-
-Smart medication adherence monitoring system for hypertension management with automated pill dispensing and tracking.
-
-**Key Features:**
-- Automated pill dispensing with scheduling
-- Medication adherence tracking
-- Real-time notifications and alerts
-- Healthcare provider monitoring dashboard
-- Integration with health records
-
-**Contributors:** Yishuai Zheng, Hannah Xiao, Chang Li, Marjorie Yang
-
----
-
-### 3. **Project X** - Additional Healthcare Solution
-**📂 Status: In Development**
-
-Comprehensive healthcare monitoring solution addressing additional patient care needs.
-
-**Contributors:** Auria Zhang, Jazmyn Zhang, Yunqing Zhao, Shangming Zhuo
-
----
-
-## 🚀 Live Demo
-
-**Visit the integrated demo website:**  
-**🔗 [https://adorable-brigadeiros-c2240e.netlify.app/](https://adorable-brigadeiros-c2240e.netlify.app/)**
-
-Navigate between projects to see live demonstrations of each healthcare solution.
-
-## 🛠️ Quick Start Guide
-
-### For KneeHeal Project:
 ```bash
-# Clone repository and switch to KneeHeal branch
-git clone https://github.com/marjyang/T-Mobile-Carelink-515-Projects.git
-cd T-Mobile-Carelink-515-Projects
-git checkout kneeheal-project
-
 # Install dependencies
 npm install
 pip install -r requirements.txt
@@ -74,102 +31,30 @@ npm start                          # React app (localhost:3000)
 python firebase_read_predict.py    # ML prediction service
 ```
 
-### For Carelink Pill Box:
-```bash
-# Clone repository and navigate to Pill Box project
-git clone https://github.com/marjyang/T-Mobile-Carelink-515-Projects.git
-cd T-Mobile-Carelink-515-Projects/Carelink_Pillbox
-
-# Follow setup instructions in the folder
-```
-
-## 📊 Project Overview
-
-| Project | Technology | Status | Branch/Folder |
-|---------|------------|--------|---------------|
-| **KneeHeal** | React, Firebase, Python ML, MPU6050 | ✅ Complete | [`kneeheal-project`](https://github.com/marjyang/T-Mobile-Carelink-515-Projects/tree/kneeheal-project) |
-| **Pill Box** | IoT Sensors, Cloud Backend | ✅ Complete | [`Carelink_Pillbox`](https://github.com/marjyang/T-Mobile-Carelink-515-Projects/tree/main/Carelink_Pillbox) |
-| **Project X** | TBD | 🚧 In Progress | TBD |
-
-## 🏗️ Repository Structure
+## 📊 Project Structure
 
 ```
-T-Mobile-Carelink-515-Projects/
-├── main branch (this README)
-├── kneeheal-project branch/
-│   ├── src/                     # React application
-│   ├── firebase_read_predict.py # ML prediction service
-│   ├── mpu_angle_model.pkl     # Trained ML model
-│   ├── SETUP.md               # Detailed setup guide
-│   └── ...
-├── Carelink_Pillbox/          # Pill box project folder
-│   └── ...
-└── src/                       # Shared components
-    └── ...
+kneeheal-project/
+├── src/                     # React application
+├── firebase_read_predict.py # ML prediction service
+├── mpu_angle_model.pkl     # Trained ML model
+├── SETUP.md               # Detailed setup guide
+└── ...
 ```
-
-## 🎯 Project Goals
-
-These projects advance T-Mobile's healthcare initiative by:
-
-- **Improving Patient Outcomes**: Real-time monitoring and feedback systems
-- **Enhancing Care Delivery**: Tools for healthcare providers to monitor patients remotely
-- **Reducing Healthcare Costs**: Preventive care through continuous monitoring
-- **Advancing IoT in Healthcare**: Practical applications of connected medical devices
-- **Data-Driven Insights**: Machine learning for predictive healthcare analytics
 
 ## 🔬 Technical Innovation
 
-### KneeHeal Innovations:
 - **Dual Sensor Fusion**: Advanced MPU6050 sensor integration for accurate movement tracking
 - **Real-time ML Predictions**: Edge computing for immediate feedback during exercises
 - **Intuitive UI/UX**: Patient-friendly interfaces for rehabilitation guidance
 - **Clinical Integration**: Healthcare provider dashboards for patient monitoring
 
-### Carelink Pill Box Innovations:
-- **Smart Dispensing**: Automated medication management with IoT sensors
-- **Adherence Tracking**: Real-time monitoring of medication compliance
-- **Alert Systems**: Multi-channel notifications for patients and caregivers
+## 👥 Team Members
 
-## 👥 Contributors & Teams
-
-### KneeHeal Team
 - **Kelly Peng** - Project Lead & Full-Stack Development
 - **Diana Ding** - Hardware Integration & Sensor Systems
 - **Yourong Xu** - Machine Learning & Data Analytics
 - **Jialu Huang** - Frontend Development & UI/UX Design
-
-### Carelink Pill Box Team
-- **Yishuai Zheng** - Hardware & IoT Development
-- **Hannah Xiao** - Software Development
-- **Chang Li** - System Integration
-- **Marjorie Yang** - Project Management & Documentation
-
-### Project X Team
-- **Auria Zhang** - Development Lead
-- **Jazmyn Zhang** - Hardware Integration
-- **Yunqing Zhao** - Software Development
-- **Shangming Zhuo** - System Architecture
-
-## 🎓 Academic & Industry Partnership
-
-### Academic Institution
-**Global Innovation Exchange (GIX) - University of Washington**
-- **Course**: TECHIN 515 (Hardware Software Lab II)
-- **Program**: Technology Innovation Master's Program
-- **Cohort**: GIX Cohort 8
-
-### Industry Partner
-**T-Mobile**
-- **Initiative**: Remote Healthcare Data Collection System
-- **Focus**: Expanding healthcare accessibility through technology
-
-### Project Advisors
-- **Candice Boyd** - T-Mobile Healthcare Innovation
-- **Justin Ho** - T-Mobile Technical Leadership
-- **Quasheery Ahmed** - T-Mobile Project Management
-- **John Raiti** - GIX Faculty Advisor
-- **Luyao Niu** - GIX Technical Advisor
 
 ## 📈 Impact & Applications
 
@@ -185,45 +70,22 @@ These projects advance T-Mobile's healthcare initiative by:
 - **ML in Medicine**: Applied machine learning for predictive healthcare
 - **User-Centered Design**: Healthcare interfaces designed for diverse user needs
 
-## 🔗 External Resources
-
-- **Live Demo**: [https://adorable-brigadeiros-c2240e.netlify.app/](https://adorable-brigadeiros-c2240e.netlify.app/)
-- **GIX Program**: [University of Washington Global Innovation Exchange](https://gix.uw.edu/)
-- **T-Mobile Healthcare**: [T-Mobile Health Solutions](https://www.t-mobile.com/)
-
 ## 📞 Contact & Support
 
-### Project Inquiries
-**Primary Contact**: marjyang@uw.edu  
-**Repository Maintainer**: Marjorie Yang
-
-### Technical Support
-For technical issues or questions about specific projects:
-1. Check the project-specific documentation in respective branches/folders
-2. Review setup guides (`SETUP.md` files)
-3. Contact project team members directly
-4. Submit issues through GitHub Issues
-
-### Collaboration Opportunities
-We welcome collaboration from:
-- Healthcare professionals interested in IoT applications
-- Developers working on similar healthcare solutions
-- Researchers in medical technology and patient monitoring
-- Industry partners exploring connected health solutions
-
----
+For technical issues or questions:
+1. Check the project documentation in `SETUP.md`
+2. Contact project team members directly
+3. Submit issues through GitHub Issues
 
 ## 📄 License & Attribution
 
-This project collection was developed as part of TECHIN 515 coursework at the Global Innovation Exchange (GIX), University of Washington, in partnership with T-Mobile.
+This project was developed as part of TECHIN 515 coursework at the Global Innovation Exchange (GIX), University of Washington, in partnership with T-Mobile.
 
 **Academic Year**: 2024-2025  
 **Course**: TECHIN 515 - Hardware Software Lab II  
 **Institution**: Global Innovation Exchange (GIX)  
 **Industry Partner**: T-Mobile
 
-For detailed licensing information, see individual project folders.
-
 ---
 
-**⭐ Star this repository if these healthcare IoT solutions inspire your work!**
+**⭐ Star this repository if this healthcare IoT solution inspires your work!**
